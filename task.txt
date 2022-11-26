@@ -1,0 +1,126 @@
+//Q1; For a given JSON iterate over all for loops:
+//===>
+
+
+
+// var Exam_results = {
+//     "name": "nivetha",
+//     "marks": "87%",
+//     "remarks": "much need more concentration in studies",
+//     "subjects": ["English","Tamil","Chemistry", "Maths"]
+// }
+// for(var i=0;i<Exam_results.subjects.length;i++) {
+//     console.log(Exam_results.subjects[i]);
+// }
+
+// output: 
+// script.js:8 English
+// script.js:8 Tamil
+// script.js:8 Chemistry
+// script.js:8 Maths
+// (index):39 Live reload enabled.
+
+// --------------------------------------------------------------------------------------
+
+//for in method: 
+
+ var Exam_results = {
+     "name": "nivetha",
+     "marks": "87%",
+     "remarks": "much need more concentration in studies",
+     "subjects": ["English","Tamil","Chemistry", "Maths"]
+ }
+ for(i in Exam_results.subjects) {
+     console.log(Exam_results.subjects[i]);
+ }
+//output: 
+// script.js:29 English
+// script.js:29 Tamil
+// script.js:29 Chemistry
+ //script.js:29 Maths
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// for of method:
+
+ var numbers = {
+     a: 10,
+     b: 20,
+     c: 30,
+     d: 40,
+   };
+  
+  for(var ans of Object.values(numbers)) {
+     console.log(ans);
+   }
+
+//output 
+//10
+//20
+//30
+//40
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+//Q2 create a resume using JSON format
+
+var resume = {
+     "Name": "Nivetha",
+     "Age": "20",
+     "Gender": "Female",
+     "Phone number": "+91 6383595507",
+     "Address": "12c/A3/9,Thamarai illam ,Dr.kalaingar street, kallakurichi",
+     "Qualification": "B.Sc Microbiology",
+     "college": "Vivekanandha college of arts and science for women ",
+     "Experience": "0 Years",
+     "Project":
+       "Green Antioxidant of spring onion(Leaves Of Allium Cepa)",
+     "Languages_Known": "English, Tamil",
+     "Skills":"Problem solving,Team leadership,Script Writing",
+          };
+   console.log(resume);
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+//output===>
+  
+  //object
+  //Name
+  //: 
+  //'Nivetha',
+  //Age
+  //: 
+  //'20',
+  //Gender
+  //: 
+  //'Female',
+  //Phone number
+  //: 
+  //'+91 6383595507',
+  //Address
+  //:
+  // '12c/A3/9,Thamarai illam ,Dr.kalaingar street, kallakurichi',
+  //Qualification
+  //:
+  // 'B.Sc Microbiology',
+  //College
+  //:
+  // 'Vivekanandha college of arts and science for women ',
+  //Experience
+  //: 
+  //'0 Years',
+  //Project
+  //:
+  // 'Green Antioxidant of spring onion(Leaves Of Allium Cepa)',
+  //Languages_Known
+  //:
+  // 'English, Tamil',
+  //Skills
+  //:
+  //'Problem solving,Team leadership,Script Writing' 
+
+  //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+ 
+  
